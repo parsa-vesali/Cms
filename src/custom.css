@@ -16,3 +16,21 @@
 * , html , body {
     font-family: 'Dana';
 }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    direction: rtl;
+}
+
+body {
+    direction: rtl;
+    display: flex;
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
