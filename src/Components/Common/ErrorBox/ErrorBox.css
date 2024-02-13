@@ -1,0 +1,20 @@
+.ErrorBox {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    column-gap: 1rem;
+}
+.ErrorBox svg{
+    font-size: 3rem;
+}
+
+.ErrorBox__text {
+    display: flex;
+    flex-direction: column;
+}
+.ErrorBox__title {
+    font-size: 2rem;
+    font-weight: bold;
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useRoutes } from "react-router-dom";
-import SideBar from './Components/SideBar/SideBar'
-import NavBar from './Components/NavBar/NavBar'
+import SideBar from './Components/Common/SideBar/SideBar'
+import NavBar from './Components/Common/NavBar/NavBar'
 import routes from './Routes'
 import './App.css'
 
