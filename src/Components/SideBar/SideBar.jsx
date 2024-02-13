@@ -1,13 +1,14 @@
 import React from "react";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
-import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from "@mui/icons-material/Person";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import CommentIcon from "@mui/icons-material/Comment";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn";
 import "./SideBar.css";
+import { Link } from "react-router-dom";
 export default function SideBar() {
   return (
     <div className="sidebar">
@@ -22,55 +23,54 @@ export default function SideBar() {
 
       <ul className="sidebar-list">
         <li className="sidebar-item active">
-          <a href="#" className="sidebar-link">
+          <Link to={"/"} className="sidebar-link">
             <DashboardIcon />
             داشبورد
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Account"} className="sidebar-link">
             <PersonIcon />
-             حساب کاربری
-          </a>
+            حساب کاربری
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Analysis"} className="sidebar-link">
             <TrendingUpIcon />
             تجزیه و تحلیل
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Products"} className="sidebar-link">
             <AddShoppingCartIcon />
             محصولات
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Comments"} className="sidebar-link">
             <CommentIcon />
             نظرات
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Users"} className="sidebar-link">
             <PeopleAltIcon />
             کاربران
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Orders"} className="sidebar-link">
             <LocalMallIcon />
             سفارشات
-          </a>
+          </Link>
         </li>
         <li className="sidebar-item">
-          <a href="#" className="sidebar-link">
+          <Link to={"/Discounts"} className="sidebar-link">
             <MonetizationOnIcon />
             تخفیف ها
-          </a>
+          </Link>
         </li>
       </ul>
-      
     </div>
   );
 }
