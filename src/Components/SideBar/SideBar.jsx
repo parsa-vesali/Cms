@@ -1,6 +1,7 @@
 import React from "react";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import PersonIcon from '@mui/icons-material/Person';
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import CommentIcon from "@mui/icons-material/Comment";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
@@ -24,6 +25,12 @@ export default function SideBar() {
           <a href="#" className="sidebar-link">
             <DashboardIcon />
             داشبورد
+          </a>
+        </li>
+        <li className="sidebar-item">
+          <a href="#" className="sidebar-link">
+            <PersonIcon />
+             حساب کاربری
           </a>
         </li>
         <li className="sidebar-item">
