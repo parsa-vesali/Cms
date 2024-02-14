@@ -33,10 +33,19 @@
     column-gap: 2rem;
 }
 .ProductPopular__btn{
-    width: 15rem;
-    padding: 1rem 2rem;
+    width: 16rem;
+    padding: 1rem ;
     background-color: var(--secondary-color);
     color: var(--white-color);
     border-radius: 2rem;
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    column-gap: .5rem;
+}
+
+.ProductPopular__btn svg {
+    font-size: 2rem;
 }

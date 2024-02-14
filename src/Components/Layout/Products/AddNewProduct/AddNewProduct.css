@@ -1,0 +1,38 @@
+.AddNewProduct {
+    width: 100%;
+}
+
+.AddNewProduct__title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.AddNewProduct__subtitle {
+    color: var(--gray-color);
+}
+
+.AddNewProduct__Form {
+    display: flex;
+    margin: 2rem 0;
+    column-gap: 4rem;
+}
+
+.AddNewProduct__Form-left {
+    width: 100%;
+}
+
+.AddNewProduct__Form-right {
+    width: 100%;
+    position: relative;
+}
+
+.AddNewProduct__Form-input {
+    padding: .5rem 1rem !important;
+    font-size: 1.5rem !important;
+}
+
+.AddNewProduct__Form-submit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

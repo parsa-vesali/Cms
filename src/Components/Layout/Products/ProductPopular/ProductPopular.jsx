@@ -1,4 +1,6 @@
 import React from 'react'
+import EditNoteIcon from '@mui/icons-material/EditNote';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import './ProductPopular.css'
 export default function ProductPopular() {
   return (
@@ -11,8 +13,14 @@ export default function ProductPopular() {
             <img src="./img/product.jpg" alt="img" />
         </div>
        <div className="ProductPopular__links">
-        <button className='ProductPopular__btn'>مشاهده اطلاعات</button>
-        <button className='ProductPopular__btn'>ویرایش</button>
+        <button className='ProductPopular__btn'>
+          <KeyboardArrowLeftIcon />
+          مشاهده اطلاعات
+          </button>
+        <button className='ProductPopular__btn'>
+          <EditNoteIcon />
+          ویرایش
+        </button>
        </div>
     </div>
   )

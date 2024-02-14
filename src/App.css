@@ -3,3 +3,23 @@
    margin-right: 29rem;
    padding: 0 2rem;
 }
+
+/* helper */
+
+.app__btn {
+   padding: 1rem  2rem;
+   background-color: var(--secondary-color);
+   color: var(--white-color);
+   border-radius: 2rem;
+   margin-top: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: row-reverse;
+   column-gap: .5rem;
+   transition: all 200ms ease;
+}
+
+.app__btn:hover {
+   background-color: #c2410c;
+}
