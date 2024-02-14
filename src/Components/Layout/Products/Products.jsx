@@ -7,6 +7,7 @@ import ErrorBox from "../../Common/ErrorBox/ErrorBox";
 import "./Products.css";
 export default function Products() {
   return (
+   <>
     <div className="Products">
       <div className="Products__right">
         <div className="ProductsBox__container">
@@ -14,12 +15,12 @@ export default function Products() {
           <ProductBox />
         </div>
         <AddNewProduct />
-        <ProductTable />
       </div>
-
       <div className="Products__left">
         <ProductPopular />
       </div>
     </div>
+    <ProductTable />
+   </>
   );
 }
