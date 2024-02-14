@@ -1,8 +1,21 @@
 .ProductTable{
-   margin-top: 4rem;
+   margin: 5rem 0;
 }
 .ProductTable__ttile{
     margin: 2rem;
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.ProductTable__badge {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+
+.ProductTable__btns {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
