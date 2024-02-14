@@ -1,4 +1,4 @@
-import Home from './Components/Home/Home'
+import Home from './Components/Layout/Home/Home'
 import Account from './Components/Layout/Account/Account'
 import Analysis from './Components/Layout/Analysis/Analysis'
 import Products from './Components/Layout/Products/Products'
