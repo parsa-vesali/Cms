@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import CloseIcon from "@mui/icons-material/Close";
 import "../Modal.css";
 
-function EditModal({ submit, cancel }) {
+function EditModal({ children , submit, cancel }) {
   const [show, setShow] = useState(true);
 
   return (
@@ -16,6 +16,7 @@ function EditModal({ submit, cancel }) {
             <CloseIcon />
           </span>
         </Modal.Body>
+          {children}
         <Modal.Footer className="modal__footer">
           <Button
             onClick={() => submit()}

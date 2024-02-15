@@ -87,7 +87,9 @@ export default function ProductTable() {
         <EditModal
           submit={deletModalSubmitAction}
           cancel={deletModalCancelAction}
-        />
+        >
+          <h1>hello</h1>
+        </EditModal>
       )}
     </>
   );
