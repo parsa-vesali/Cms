@@ -3,15 +3,24 @@ import Table from "react-bootstrap/Table";
 import Badge from "react-bootstrap/Badge";
 import DeletModal from "../../../Common/Modals/DeletModal/DeletModal";
 import DetailsModal from "../../../Common/Modals/DetailsModal/DetailsModal";
+import EditModal from "../../../Common/Modals/EditModal/EditModal";
 import "./ProductTable.css";
 export default function ProductTable() {
   const [isShowModal, setisShowModal] = useState(false);
+  const [isShowDetailsModal, setisShowDetailsModal] = useState(false);
+  const [isShowEditModal, setisShowEditModal] = useState(false);
+
   const deletModalCancelAction = () => {
     setisShowModal(false);
+    setisShowDetailsModal(false);
+    setisShowEditModal(false);
   };
   const deletModalSubmitAction = () => {
     setisShowModal(false);
+    setisShowDetailsModal(false);
+    setisShowEditModal(false);
   };
+
   return (
     <>
       <div className="ProductTable">
@@ -41,10 +50,19 @@ export default function ProductTable() {
                   >
                     حذف
                   </Badge>
-                  <Badge bg="info" text="dark" className="ProductTable__badge">
+                  <Badge
+                    bg="info"
+                    text="dark"
+                    className="ProductTable__badge"
+                    onClick={() => setisShowEditModal(true)}
+                  >
                     ویرایش
                   </Badge>
-                  <Badge bg="success" className="ProductTable__badge">
+                  <Badge
+                    bg="success"
+                    className="ProductTable__badge"
+                    onClick={() => setisShowDetailsModal(true)}
+                  >
                     جزیات
                   </Badge>
                 </div>
@@ -55,6 +73,18 @@ export default function ProductTable() {
       </div>
       {isShowModal && (
         <DeletModal
+          submit={deletModalSubmitAction}
+          cancel={deletModalCancelAction}
+        />
+      )}
+      {isShowDetailsModal && (
+        <DetailsModal
+          submit={deletModalSubmitAction}
+          cancel={deletModalCancelAction}
+        />
+      )}
+      {isShowEditModal && (
+        <EditModal
           submit={deletModalSubmitAction}
           cancel={deletModalCancelAction}
         />
